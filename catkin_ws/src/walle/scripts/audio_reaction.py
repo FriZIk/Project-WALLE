@@ -4,7 +4,6 @@ from std_msgs.msg import String
 from playsound import playsound
 from espeak import espeak
 
-
 def say(data):
     message = data.data
     rospy.loginfo(data.data)

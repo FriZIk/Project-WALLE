@@ -64,6 +64,11 @@ def check_parse(messArr):
         # rospy.loginfo(mess)
         pubServos.publish(mess)
         rate.sleep()
+    elif parsedLine[0] == 'V':
+        mess = ""
+        mess += 'play' + ' ' + parsedLine[1]
+        pubVoice.publish(mess)
+        rate.sleep()
     if parsedLine[0] == 'E':
         return 1
 

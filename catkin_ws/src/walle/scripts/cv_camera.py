@@ -36,19 +36,19 @@ def color_check():
     if USLOVNAYA_PEREMENNAYA == 2:
         USLOVNAYA_PEREMENNAYA = 0
         set_hsv()
-        plstr = "/home/ubuntu/Project-WALLE/catkin_ws/src/walle/scripts/sounds/robo-short-47.wav"
+        plstr = "/home/ubuntu/Project-WALLE/catkin_ws/src/walle/scripts/sounds/6.wav"
         playsound(plstr)
         time.sleep(2)
         return
     if USLOVNAYA_PEREMENNAYA == 0:
         USLOVNAYA_PEREMENNAYA = 1
         set_hsv()
-        plstr = "/home/ubuntu/Project-WALLE/catkin_ws/src/walle/scripts/sounds/robo-short-53.wav"
+        plstr = "/home/ubuntu/Project-WALLE/catkin_ws/src/walle/scripts/sounds/1.wav"
         playsound(plstr)
         time.sleep(2)
         return 
     if USLOVNAYA_PEREMENNAYA == 1:
-        plstr = "/home/ubuntu/Project-WALLE/catkin_ws/src/walle/scripts/sounds/robo-long-15.wav"
+        plstr = "/home/ubuntu/Project-WALLE/catkin_ws/src/walle/scripts/sounds/9.wav"
         playsound(plstr)
         exit()
         return
